@@ -98,7 +98,10 @@ public class Aluno {
 	public void setNota4(double nota4) {
 		this.nota4 = nota4;
 	}
-	
+	public double getMedia() {
+		return (nota1+ nota2+nota3+nota4)/4;
+		
+	}   
 	
 		
 }
