@@ -45,6 +45,8 @@ public class Aluno {
 	}
 	public String getCpf() {
 		return cpf;
+		
+		
 	}
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
@@ -99,29 +101,21 @@ public class Aluno {
 	public void setNota4(double nota4) {
 		this.nota4 = nota4;
 	}
+	
+	/*Metodo para calcular media*/
 	public double getMedia() {
 		return (nota1+ nota2+nota3+nota4)/4;
 		
 	}   
 	
 	/*Metodo para verificar se o aluno esta aprovado*/
-	
+
 	public boolean getAprovacao() {
-		double media = this.getMedia();
-		
-		if(media >=70) {
-			return true;
-		}else {
-			return false;	
-		}
-	}
-	/*Metodo para verificar se o aluno esta aprovado retornando uma string*/
-	public String getAprovacaoStd() {
 		double mediaStd = this.getMedia();
 		if(mediaStd >= 70) {
-			return "Aluno aprovado";
+			return true;
 		}else {
-			return "Aluno reprovado";
+			return false;
 		}
 	
 		}
